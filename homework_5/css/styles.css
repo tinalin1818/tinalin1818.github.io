@@ -1,5 +1,18 @@
-#menu {
+#menu-wrap {
     text-align: center;
-    width: 30%;
-    float: right;
+    width: 25%;
+    transform: translateY(50%);
+    float:right;
+}
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+}
+h1 {
+    font-family: 'Didot', serif;
 }
