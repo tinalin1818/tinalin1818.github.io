@@ -1,6 +1,6 @@
 #menu-wrap-home { /*Entire menu of home page*/
     text-align: center;
-    width: 25%;
+    width: 30%;
     transform: translateY(40%);
     float: right;
 }
@@ -19,6 +19,7 @@
 .brand { /*logo and company name*/
     max-width: 80%;
     max-height: auto;
+    transform: translateY(10%);
 }
 #nav {
     list-style-type: none;
