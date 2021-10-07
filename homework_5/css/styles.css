@@ -1,8 +1,8 @@
 #menu-wrap { /*Entire menu of home page*/
     text-align: center;
-    width: 23%;
-    transform: translateY(30%);
-    float:right;
+    width: 25%;
+    transform: translateY(40%);
+    float: right;
 }
 #brand { /*logo and company name*/
     max-width: 80%;
@@ -21,8 +21,8 @@ li a {
     padding: 8px 16px;
 }
 li a:hover {
-    background-color: rgb(246, 203, 170);
-    color: white;
+    background-color: #EB9F79;
+    color: black;
 }
 h1 {
     font-family: 'Didot', serif;
