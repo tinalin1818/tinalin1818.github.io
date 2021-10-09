@@ -1,10 +1,13 @@
-#menu-wrap-home { /*Entire menu of home page*/
+/*Nav of home page */
+.home-nav {
     text-align: center;
     width: 30%;
     transform: translateY(40%);
     float: right;
 }
-#menu-wrap { /*Entire menu of other pagse*/
+
+/*Side nav of other pagse*/
+.side-nav {
     height: 100%;
     width: 20%;
     position: fixed;
@@ -12,37 +15,49 @@
     left: 0;
     background-color: #EB9F79;
 }
+
 #menu {
-    transform: translateY(60%);
     text-align: center;
+    transform: translateY(70%);
 }
-.brand { /*logo and company name*/
+
+/*logo and company name*/
+.brand {
     max-width: 80%;
     max-height: auto;
-    transform: translateY(10%);
 }
-#nav {
+
+.nav {
     list-style-type: none;
     padding: 0;
-    background-color: rgba(255, 255, 255, 0);
 }
-li a {
+
+a {
     display: block;
     color: #000;
     text-decoration: none;
     padding: 8px 16px;
 }
-li a:hover {
+
+a.navigation:hover {
     background-color: #EB9F79;
     color: black;
 }
+
+.all-nav a:hover {
+    background-color: white;
+    color: black;
+}
+
 h1 {
     font-family: 'Didot', serif;
 }
+
 a, h3 {
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
 }
+
 .flavors {
     display: grid;
     grid-template-columns: auto auto auto;
