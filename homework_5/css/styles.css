@@ -5,6 +5,12 @@
     transform: translateY(40%);
     float: right;
 }
+
+/* Logo and company name*/
+.brand {
+    max-width: 80%;
+    max-height: auto;
+}
 /* Side nav of other pagse*/
 .side-nav {
     height: 100%;
@@ -18,11 +24,8 @@
     text-align: center;
     transform: translateY(70%);
 }
-/* Logo and company name*/
-.brand {
-    max-width: 80%;
-    max-height: auto;
-}
+
+/* Navigation */
 .nav {
     list-style-type: none;
     padding: 0;
@@ -41,6 +44,7 @@ a.navigation:hover {
     background-color: white;
     color: black;
 }
+
 h1 {
     font-family: 'Didot', serif;
     text-align: center;
@@ -50,9 +54,15 @@ a, h3 {
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
 }
+.title {
+    width: 80%;
+    text-align: center;
+    float: right;
+}
 .flavors {
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-gap: 25px;
     width: 80%;
     float: right;
 }
@@ -66,4 +76,9 @@ a, h3 {
 }
 .details {
     text-align: center;
+}
+
+.prod-desc {
+    width: 80%;
+    float: right;
 }
