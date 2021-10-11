@@ -55,16 +55,14 @@ a, h3 {
     font-weight: 100;
 }
 .title {
-    width: 80%;
+    margin-left: 20%;
     text-align: center;
-    float: right;
 }
 .flavors {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 25px;
-    width: 80%;
-    float: right;
+    margin-left: 20%;
 }
 /* Product cards */
 .product {
@@ -79,6 +77,9 @@ a, h3 {
 }
 
 .prod-desc {
-    width: 80%;
-    float: right;
+    margin-left: 32%;
+    margin-top: 15%;
+    width: 50%;
+    padding: 50px;
+    background-color: white;
 }
