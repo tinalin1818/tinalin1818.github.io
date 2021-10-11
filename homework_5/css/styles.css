@@ -76,6 +76,7 @@ a, h3 {
     text-align: center;
 }
 
+/* Productt description alignment -- should fix margins */
 .prod-desc {
     margin-left: 32%;
     margin-top: 15%;
