@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <style>
+            body {
+              background-color: #eb9f796e;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- side navigation -->
+        <div class="side-nav">
+            <div id="menu">
+                <a href="index.html">
+                    <img class="brand" id="brand-else" src="images/logo.png" alt="Logo">
+                    <br>
+                    <img class="brand" id="brand-else" src="images/bunbun.png" alt="Store Name">
+                </a>
+                <ul class="nav">
+                    <li class="all-nav"><a class="navigation" href="products.html">our buns</a></li>
+                    <li class="all-nav"><a class="navigation" href="aboutus.html">about us</a></li>
+                    <li class="all-nav"><a class="navigation" href="contactus.html">contact us</a></li>
+                </ul>
+                <br>
+                <img src="images/facebook.png" alt="Facebook Icon">
+                <img src="images/instagram.png" alt="Instagram Icon">
+                <img src="images/twitter.png" alt="Twitter Icon">
+            </div>
+        </div>
+        <!-- original flavor cinnamon roll product desc -->
+        <div class="prod-desc">
+            <h1>Original</h1>
+            <p style="float: left; padding-right: 50px;"><img src="images/roll.png"></p>
+            <p>Our original flavor cinnamon roll. A sweet baked dough filled with a cinnamon-sugar filling.</p>
+            <p>Price: $5.99</p>
+            
+            <!-- dropdowns to select quantity and glazing -->
+            <form action="products.html">
+                <label for="rolls">Quantity:</label>
+                <select name="rolls" id="rolls">
+                    <option value="1">1 roll</option>
+                    <option value="3">3 rolls</option>
+                    <option value="6">6 rolls</option>
+                </select>
+                <br><br>
+              
+                <label for="glazing">Glazing:</label>
+                <select name="glazing" id="glazing">
+                    <option value="none">None</option>
+                    <option value="sm">Sugar-Milk</option>
+                    <option value="vm">Vanilla-Milk</option>
+                    <option value="dc">Double-Chocolate</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Add to Cart">
+            </form>
+        
+        </div>
+    </body>
+</html>
