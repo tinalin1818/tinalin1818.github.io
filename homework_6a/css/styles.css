@@ -82,3 +82,7 @@ a, h3 {
     padding-bottom: 50px;
     padding-left: 50px;
 }
+
+.cart, .prod, .helper {
+    margin-left: 80%;
+}
