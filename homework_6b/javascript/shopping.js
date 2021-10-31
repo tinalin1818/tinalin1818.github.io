@@ -4,7 +4,37 @@ let products = [
     {
         flavor: 'Original',
         tag: 'og',
-        price: 5.99,
+        price: 4.99,
+        inCart: 0
+    },
+    {
+        flavor: 'Blackberry',
+        tag: 'bb',
+        price: 4.99,
+        inCart: 0
+    },
+    {
+        flavor: 'Walnut',
+        tag: 'wn',
+        price: 4.99,
+        inCart: 0
+    },
+    {
+        flavor: 'Original (Gluten-Free)',
+        tag: 'gf',
+        price: 4.99,
+        inCart: 0
+    },
+    {
+        flavor: 'Pumpkin Spice',
+        tag: 'ps',
+        price: 4.99,
+        inCart: 0
+    },
+    {
+        flavor: 'Caramel Pecan',
+        tag: 'cp',
+        price: 4.99,
         inCart: 0
     }
 ]

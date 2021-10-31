@@ -38,7 +38,7 @@
     cursor: pointer;
 }
 
-#myBtn {
+#myBtn1, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6 {
   border: none;
   background-color: transparent;
 }
