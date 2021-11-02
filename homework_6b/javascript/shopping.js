@@ -119,4 +119,4 @@ function totalCost(product) {
 //     }
 // }
 onLoadCartNum();
-displayCart();
+// displayCart();

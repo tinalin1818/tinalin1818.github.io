@@ -85,7 +85,7 @@ a, h3, p, label {
     font-size: 15px;
 }
 
-/* Product description alignment -- should fix margins */
+/* Product description alignment */
 .prod-desc {
     padding-bottom: 50px;
     padding-left: 50px;
@@ -111,7 +111,7 @@ a, h3, p, label {
     margin-left: 20%;
 }
   
-  /* Modal Content/Box */
+/* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;/* 15% from the top and centered */
@@ -119,15 +119,28 @@ a, h3, p, label {
     padding-right: 20px;
     width: 80%;
     height: 50%;
-    /* Could be more or less, depending on screen size */
 }
 
 #rolls, #glazing {
     border: none;
-    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px 2px rgba(0,0,0,0.1);
     border-radius: 10px;
     padding: 5px;
 }
+
+.add-cart {
+    background-color: #EB9F79;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: solid;
+    border: 5px;
+    border-color: #EB9F79;
+    transition-duration: 0.4s;
+}
+.add-cart:hover{
+    box-shadow: 0 2px 6px 2px rgba(0,0,0,0.1);
+}
+/* adjusting columns within modal*/
 .left {
     float: left;
 }
@@ -137,7 +150,7 @@ a, h3, p, label {
     float: right;
 }
   
-  /* The Close Button */
+/* The Close Button + styling */
 .close1, .close2, .close3, .close4, .close5, .close6 {
     color: #aaa;
     float: right;
@@ -156,6 +169,7 @@ a, h3, p, label {
     cursor: pointer;
 }
 
+/* button styling */
 #myBtn1, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6 {
     border: none;
     background-color: transparent;
