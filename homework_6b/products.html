@@ -55,7 +55,7 @@
                     <span class="close1">&times;</span>
                     <!-- original cinnamon roll product desc -->
                     <div class="prod-desc">
-                        <h1>Original</h1>
+                        <h1 class="flv">Original</h1>
                         <!-- left column of modal -->
                         <div class="left">
                             <img src="images/roll.png">
@@ -64,32 +64,34 @@
                         <div class="right">
                             <p>
                                 Our original cinnamon roll. A sweet baked dough filled with a
-                                cinnamon-sugar filling.</p>
-                            <p>Price: $4.99</p>
+                                cinnamon-sugar filling.
+                            </p>
+                            <span class="price">Price: $4.99</span>
                             <p>
                                 Ingredients:
                                 milk, butter, flour, sugar, cinnamon, vanilla, brown sugar
                             </p>
                             
                             <!-- dropdowns to select quantity and glazing -->
-                            <form action="products.html">
-                                <label for="rolls">Quantity:</label><br><br>
-                                <select name="rolls" id="rolls">
+                            <form class="form" id="r1" action="products.html">
+                                <label for="rolls1">Quantity:</label><br><br>
+                                <select name="rolls" id="rolls1" onchange="costOnProduct()">
                                     <option value="1">1 roll</option>
                                     <option value="3">3 rolls</option>
                                     <option value="6">6 rolls</option>
+                                    <option value="12">1 dozen</option>
                                 </select>
                                 <br><br>
                             
-                                <label for="glazing">Glazing:</label><br><br>
-                                <select name="glazing" id="glazing">
-                                    <option value="none">None</option>
-                                    <option value="sm">Sugar-Milk</option>
-                                    <option value="vm">Vanilla-Milk</option>
-                                    <option value="dc">Double-Chocolate</option>
+                                <label for="glazing1">Glazing:</label><br><br>
+                                <select name="glazing" id="glazing1">
+                                    <option value="None">None</option>
+                                    <option value="Sugar-Milk">Sugar-Milk</option>
+                                    <option value="Vanilla-Milk">Vanilla-Milk</option>
+                                    <option value="Double-Chocolate">Double-Chocolate</option>
                                 </select>
                                 <br><br>
-                                <a class="add-cart" href="#">Add to Cart</a>
+                                <input class="add-cart" id="1" type="button" onclick="clickedBtn(this.id)" value="Add to Cart">
                             </form>
                         </div>
                     </div>
@@ -124,31 +126,32 @@
                             <p>
                                 Our blackberry cinnamon roll. A sweet baked dough filled with a
                                 cinnamon-sugar filling with the added tartness from our homemade blackberry jam.</p>
-                            <p>Price: $4.99</p>
+                                <span class="price">Price: $4.99</span>
                             <p>
                                 Ingredients:
                                 milk, butter, flour, sugar, cinnamon, vanilla, brown sugar
                             </p>
                             
                             <!-- dropdowns to select quantity and glazing -->
-                            <form action="products.html">
-                                <label for="rolls">Quantity:</label><br><br>
-                                <select name="rolls" id="rolls">
+                            <form class="form" id="r2" action="products.html">
+                                <label for="rolls2">Quantity:</label><br><br>
+                                <select name="rolls" id="rolls2" onchange="costOnProduct()">
                                     <option value="1">1 roll</option>
                                     <option value="3">3 rolls</option>
                                     <option value="6">6 rolls</option>
+                                    <option value="12">1 dozen</option>
                                 </select>
                                 <br><br>
                             
-                                <label for="glazing">Glazing:</label><br><br>
-                                <select name="glazing" id="glazing">
+                                <label for="glazing2">Glazing:</label><br><br>
+                                <select name="glazing" id="glazing2">
                                     <option value="none">None</option>
                                     <option value="sm">Sugar-Milk</option>
                                     <option value="vm">Vanilla-Milk</option>
                                     <option value="dc">Double-Chocolate</option>
                                 </select>
                                 <br><br>
-                                <a class="add-cart" href="#">Add to Cart</a>
+                                <input class="add-cart" id="2" type="button" onclick="clickedBtn(this.id)" value="Add to Cart">
                             </form>
                         </div>
                     </div>
@@ -183,31 +186,32 @@
                             <p>
                                 Our walnut encrusted cinnamon roll. A sweet baked dough filled with a
                                 cinnamon-sugar filling with the added nuttiness from our locally sourced walnuts.</p>
-                            <p>Price: $4.99</p>
+                                <span class="price">Price: $4.99</span>
                             <p>
                                 Ingredients:
                                 walnut, milk, butter, flour, sugar, cinnamon, vanilla, brown sugar
                             </p>
                             
                             <!-- dropdowns to select quantity and glazing -->
-                            <form action="products.html">
-                                <label for="rolls">Quantity:</label><br><br>
-                                <select name="rolls" id="rolls">
+                            <form class="form" id="r3" action="products.html">
+                                <label for="rolls3">Quantity:</label><br><br>
+                                <select name="rolls" id="rolls3" onchange="costOnProduct()">
                                     <option value="1">1 roll</option>
                                     <option value="3">3 rolls</option>
                                     <option value="6">6 rolls</option>
+                                    <option value="12">1 dozen</option>
                                 </select>
                                 <br><br>
                             
-                                <label for="glazing">Glazing:</label><br><br>
-                                <select name="glazing" id="glazing">
+                                <label for="glazing3">Glazing:</label><br><br>
+                                <select name="glazing" id="glazing3">
                                     <option value="none">None</option>
                                     <option value="sm">Sugar-Milk</option>
                                     <option value="vm">Vanilla-Milk</option>
                                     <option value="dc">Double-Chocolate</option>
                                 </select>
                                 <br><br>
-                                <a class="add-cart" href="#">Add to Cart</a>
+                                <input class="add-cart" id="3" type="button" onclick="clickedBtn(this.id)" value="Add to Cart">
                             </form>
                         </div> 
                     </div>
@@ -241,31 +245,32 @@
                         <div class="right">
                             <p>Our original flavor cinnamon roll made gluten-free. A sweet baked dough filled with a 
                                 cinnamon-sugar filling. And now, everyone can enjoy it.</p>
-                            <p>Price: $4.99</p>
+                                <span class="price">Price: $4.99</span>
                             <p>
                                 Ingredients:
                                 milk, butter, gluten-free flour, sugar, cinnamon, vanilla, brown sugar
                             </p>
                             
                             <!-- dropdowns to select quantity and glazing -->
-                            <form action="products.html">
+                            <form class="form4" id="r4" action="products.html">
                                 <label for="rolls">Quantity:</label><br><br>
-                                <select name="rolls" id="rolls">
+                                <select name="rolls" id="rolls4" onchange="costOnProduct()">
                                     <option value="1">1 roll</option>
                                     <option value="3">3 rolls</option>
                                     <option value="6">6 rolls</option>
+                                    <option value="12">1 dozen</option>
                                 </select>
                                 <br><br>
                             
-                                <label for="glazing">Glazing:</label><br><br>
-                                <select name="glazing" id="glazing">
+                                <label for="glazing4">Glazing:</label><br><br>
+                                <select name="glazing" id="glazing4">
                                     <option value="none">None</option>
                                     <option value="sm">Sugar-Milk</option>
                                     <option value="vm">Vanilla-Milk</option>
                                     <option value="dc">Double-Chocolate</option>
                                 </select>
                                 <br><br>
-                                <a class="add-cart" href="#">Add to Cart</a>
+                                <input class="add-cart" id="4" type="button" onclick="clickedBtn(this.id)" value="Add to Cart">
                             </form>
                         </div>
                     </div>
@@ -301,30 +306,31 @@
                                 Our pumpkin-spice cinnamon roll. A sweet baked dough filled with a
                                 cinnamon-sugar filling, now with a festive, fall-flavored twist.
                             </p>
-                            <p>Price: $4.99</p>
+                            <span class="price">Price: $4.99</span>
                             <p>
                                 Ingredients:
                                 pumpkin, nutmeg, ginger, cloves, milk, butter, flour, sugar, cinnamon, vanilla, brown sugar
                             </p>
                             <!-- dropdowns to select quantity and glazing -->
-                            <form action="products.html">
-                                <label for="rolls">Quantity:</label><br><br>
-                                <select name="rolls" id="rolls">
+                            <form class="form" id="r5" action="products.html">
+                                <label for="rolls5">Quantity:</label><br><br>
+                                <select name="rolls" id="rolls5" onchange="costOnProduct()">
                                     <option value="1">1 roll</option>
                                     <option value="3">3 rolls</option>
                                     <option value="6">6 rolls</option>
+                                    <option value="12">1 dozen</option>
                                 </select>
                                 <br><br>
                             
-                                <label for="glazing">Glazing:</label><br><br>
-                                <select name="glazing" id="glazing">
+                                <label for="glazing5">Glazing:</label><br><br>
+                                <select name="glazing" id="glazing5">
                                     <option value="none">None</option>
                                     <option value="sm">Sugar-Milk</option>
                                     <option value="vm">Vanilla-Milk</option>
                                     <option value="dc">Double-Chocolate</option>
                                 </select>
                                 <br><br>
-                                <a class="add-cart" href="#">Add to Cart</a>
+                                <input class="add-cart" id="5" type="button" onclick="clickedBtn(this.id)" value="Add to Cart">
                             </form>
                         </div>
                     </div>
@@ -359,27 +365,28 @@
                             <p>
                                 Our caramel pecan cinnamon roll. A sweet baked dough filled with a
                                 cinnamon-sugar filling with the added crunch and aroma from our candied pecans.</p>
-                            <p>Price: $4.99</p>
+                                <span class="price">Price: $4.99</span>
                             
                             <!-- dropdowns to select quantity and glazing -->
-                            <form action="products.html">
-                                <label for="rolls">Quantity:</label><br><br>
-                                <select name="rolls" id="rolls">
+                            <form class="form" id="r6" action="products.html">
+                                <label for="rolls6">Quantity:</label><br><br>
+                                <select name="rolls" id="rolls6" onchange="costOnProduct()">
                                     <option value="1">1 roll</option>
                                     <option value="3">3 rolls</option>
                                     <option value="6">6 rolls</option>
+                                    <option value="12">1 dozen</option>
                                 </select>
                                 <br><br>
                             
-                                <label for="glazing">Glazing:</label><br><br>
-                                <select name="glazing" id="glazing">
+                                <label for="glazing6">Glazing:</label><br><br>
+                                <select name="glazing" id="glazing6">
                                     <option value="none">None</option>
                                     <option value="sm">Sugar-Milk</option>
                                     <option value="vm">Vanilla-Milk</option>
                                     <option value="dc">Double-Chocolate</option>
                                 </select>
                                 <br><br>
-                                <a class="add-cart" href="#">Add to Cart</a>
+                                <input class="add-cart" id="6" type="button" onclick="clickedBtn(this.id)" value="Add to Cart">
                             </form>
                         </div>
                     </div>

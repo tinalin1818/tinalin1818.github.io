@@ -81,7 +81,7 @@ a, h3, p, label {
     font-family: 'Rubik', sans-serif;
 }
 .cost {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 15px;
 }
 
@@ -118,7 +118,8 @@ a, h3, p, label {
     padding: 20px;
     padding-right: 20px;
     width: 80%;
-    height: 50%;
+    height: 60%;
+    /* QUESTION: Why does this not fit to the content? */
 }
 
 #rolls, #glazing {
@@ -136,6 +137,8 @@ a, h3, p, label {
     border: 5px;
     border-color: #EB9F79;
     transition-duration: 0.4s;
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
 }
 .add-cart:hover{
     box-shadow: 0 2px 6px 2px rgba(0,0,0,0.1);
@@ -173,4 +176,36 @@ a, h3, p, label {
 #myBtn1, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6 {
     border: none;
     background-color: transparent;
+}
+
+/* shopping cart */
+.products-container {
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+.product-header {
+    width: 100%;
+    display:flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+.prods ion-icon {
+    cursor: pointer;
+}
+
+.action {
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+    border-bottom: 1px solid #E44C4C;
+}
+.prod{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
 }

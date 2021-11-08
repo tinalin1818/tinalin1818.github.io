@@ -40,7 +40,6 @@ for (let i = 0; i < exits.length; i++) {
     }
 }
 
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     for (let i = 0; i < modals.length; i++) {
