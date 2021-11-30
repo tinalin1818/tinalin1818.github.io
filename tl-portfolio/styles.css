@@ -1,0 +1,126 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700'); */
+/* 
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+} */
+/*--- Fixed Background Image --*/
+/* figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0!important;
+}
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#fixed {
+    background-image: url('img/mac.png');
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+} */
+/*--- Bootstrap Padding Fix --*/
+/* [class*="col-"] {
+      padding: 1rem;
+} */
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+/* index */
+.paper-weight {
+    width: 100px;
+    height: 80%;
+    background: #78410F;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    align-items: center;
+}
+
+.brush-holder {
+    width: 175px;
+    height: 80px;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    align-items: center;
+    border-radius: 50px / 50%;
+    background-color: #D9E7F3;
+}
+
+.brush {
+    width: 175px;
+    height: 80px;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+}
+
+.ink {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #000;
+    border: 20px solid #C4C4C4;
+}
+
+/* .ink-holder {
+    top: 40%;
+    left: 20%;
+    position: relative;
+    width: 175px;
+    height: 175px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+ }
+ 
+.ink {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+ } */
+
+.card {
+    width: 40rem;
+    height: 30rem;
+    float: right;
+    align-items: center;
+    background-color: #FFFAE7;
+    border: none;
+}
+
+.container {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row-reverse; /* move to other end of container, essentially float: right */
+    align-items: center;
+}
