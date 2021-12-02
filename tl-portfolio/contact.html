@@ -23,7 +23,7 @@
                     <a class="nav-link" href="work.html">work</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="about.html">about</a>
+                    <a class="nav-link" href="about.html">about</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">tina lin.</a>
@@ -32,39 +32,26 @@
                     <a class="nav-link" href="tina lin_resume.pdf">resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">contact</a>
+                    <a class="nav-link active" href="contact.html">contact</a>
                 </li>
             </ul>
         </nav>
-        <!-- <div class="container" style="flex-direction: row; justify-content: space-evenly;">
-            <div class="main-description">
-                <h1 class="title">reach me here!</h1>
-                <form onsubmit="return false">
-                    <input type="text" placeholder="Enter your first name" id="firstName" />
-                    <input type="text" placeholder="Enter your last name" id="lastName"/><br><br>
-                    <input type="email" placeholder="Enter your email" id="email" />
-                    <span>Subject</span><br>
-                    <textarea id="subject" rows="4"></textarea><br><br>
-                    <button onclick="sendContact();">Send contact</button>
-                </form>
-            </div>
-        </div>          -->
 
         <div class="container" style="flex-direction: row; justify-content: space-evenly;">
-            <form action="action_page.php">
+            <form action="mailto:linti1818@gmail.com" method="post" enctype="multipart/form-data">
                 <h1 class="title">reach me here!</h1>
-                <label for="fname">first name:</label>
-                <input type="text" id="fname" name="firstname" placeholder="your first name">
+                <label class="lead" for="fname">first name:</label>
+                <input class="lead" type="text" id="fname" name="firstname" placeholder="your first name">
                 
-                <label for="lname">last name:</label>
-                <input type="text" id="lname" name="lastname" placeholder="your last name">
+                <label class="lead" for="lname">last name:</label>
+                <input class="lead" type="text" id="lname" name="lastname" placeholder="your last name">
                 <br>
-                <label for="lname">subject:</label>
-                <input type="text" id="topic" name="subject" placeholder="topic">
+                <label class="lead" for="lname">subject:</label>
+                <input class="lead" type="text" id="topic" name="subject" placeholder="topic">
                 <br>
-                <label for="subject">topic:</label>
+                <label class="lead" for="subject">topic:</label>
                 <br>
-                <textarea id="subject" name="subject" placeholder="what's up?" style="height:200px"></textarea>
+                <textarea class="lead" id="subject" name="subject" placeholder="what's up?"></textarea>
 
                 <input type="submit" value="Submit">
           </div>
