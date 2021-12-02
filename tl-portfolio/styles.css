@@ -189,3 +189,10 @@ input[type=text], select, textarea {
     color: #D9E7F3;
     font-weight: bold;
 }
+
+/* icons */
+
+ion-icon {
+    size: large;
+    color: #5194D1;
+}
