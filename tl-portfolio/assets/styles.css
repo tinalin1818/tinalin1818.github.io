@@ -198,74 +198,59 @@ input[type=text], select, textarea {
       --row-height: 200px;
     }
 }
-.image-grid {
-    --gap: 16px;
-    --num-cols: 4;
-    --row-height: 300px;
-  
-    box-sizing: border-box;
-    padding: var(--gap);
-  
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
-    margin: 100px;
-  }
-  
-.image-grid > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .image-grid5 {
     --gap: 16px;
-    --num-cols: 5;
-    --row-height: 500px;
-  
-    box-sizing: border-box;
-    /* padding: var(--gap); */
-  
+    --num-cols: 5;  
+    box-sizing: border-box;  
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
     margin: 100px;
 }
-  
 .image-grid5 > img {
     width: 100%;
     height: 100%;
     object-fit: scale-down;
 }
+
 .image-grid3 {
     --gap: 16px;
-    --num-cols: 3;
-    --row-height: 500px;
-  
+    --num-cols: 3;  
     box-sizing: border-box;
-    /* padding: var(--gap); */
-  
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
     margin: 100px;
 }
-  
 .image-grid3 > img {
     width: 100%;
     height: 100%;
     object-fit: scale-down;
 }
+
+.image-grid1 {
+    --gap: 16px;
+    --num-cols: 1;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    margin: 100px;
+}
+.image-grid1 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
 .image-grid2 {
     --gap: 16px;
     --num-rows: 2;
-    /* --row-height: 500px; */
     box-sizing: border-box;
-    padding: var(--gap);
-  
     display: grid;
     grid-template-rows: repeat(var(--num-rows), 1fr);
     gap: var(--gap);
@@ -280,10 +265,7 @@ input[type=text], select, textarea {
 .image-grid2c {
     --gap: 16px;
     --num-cols: 2;
-  
     box-sizing: border-box;
-    padding: var(--gap);
-  
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
     gap: var(--gap);
@@ -295,34 +277,16 @@ input[type=text], select, textarea {
     object-fit: scale-down;
 }
 
+/* carousel */
 .carousel-img {
     width: 100%;
     height: 700px;
     object-fit: scale-down;
 }
+
+/* icons */
 ion-icon {
     color: black;
     border: 1px solid white;
     border-radius: 50%;
-}
-
-.image-grid3c {
-    --gap: 16px;
-    --num-cols: 3;
-    /* --row-height: a; */
-  
-    box-sizing: border-box;
-    padding: var(--gap);
-  
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: auto;
-    gap: var(--gap);
-    margin: 100px;
-}
-  
-.image-grid3c > img {
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
 }
