@@ -1,5 +1,24 @@
+/* general */
 * {
     font-family: 'Barlow', sans-serif;
+}
+
+.container {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.lead {
+    font-size: 15px;
+    color: black;
+}
+
+h1, .h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 50px;
+    color: black;
 }
 
 .main-description {
@@ -56,24 +75,24 @@
     align-items: center;
     background-color: #FCFCFC;
     border: none;
+    -webkit-animation: blink 3.0s linear infinite;
+    -moz-animation: blink 3.0s linear infinite;
+    -ms-animation: blink 3.0s linear infinite;
+    -o-animation: blink 3.0s linear infinite;
+    animation: blink 3.0s linear infinite;
 }
 
-.container {
-    min-height: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+/* front page animation */
+@keyframes blink {
+    0% { box-shadow: 0 0 20px #6D6D6D; }
+    50% { box-shadow: none; }
+    100% { box-shadow: 0 0 20px #6D6D6D; }
 }
 
-.lead {
-    font-size: 15px;
-    color: black;
-}
-
-h1, .h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 50px;
-    color: black;
+@-webkit-keyframes blink {
+    0% { box-shadow: 0 0 20px #6D6D6D; }
+    50% { box-shadow: 0 0 0; }
+    100% { box-shadow: 0 0 20px #6D6D6D; }
 }
 
 /* work */
@@ -91,26 +110,6 @@ h1, .h1 {
 }
 .active {
     text-decoration: underline;
-}
-/* front page animation */
-@keyframes blink {
-    0% { box-shadow: 0 0 20px #6D6D6D; }
-    50% { box-shadow: none; }
-    100% { box-shadow: 0 0 20px #6D6D6D; }
-}
-
-@-webkit-keyframes blink {
-    0% { box-shadow: 0 0 20px #6D6D6D; }
-    50% { box-shadow: 0 0 0; }
-    100% { box-shadow: 0 0 20px #6D6D6D; }
-}
-
-.card {
-    -webkit-animation: blink 3.0s linear infinite;
-    -moz-animation: blink 3.0s linear infinite;
-    -ms-animation: blink 3.0s linear infinite;
-    -o-animation: blink 3.0s linear infinite;
-    animation: blink 3.0s linear infinite;
 }
 
 /* start */
@@ -193,7 +192,7 @@ input[type=text], select, textarea {
 
 /* images */
 @media screen and (max-width: 1024px) {
-    .image-grid, .image-grid5, .image-grid2 {
+    .image-grid5, .image-grid2, .image-grid2c, .image-grid1, .image-grid3 {
       --num-cols: 2;
       --row-height: 200px;
     }
