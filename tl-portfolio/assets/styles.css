@@ -191,8 +191,8 @@ input[type=text], select, textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
   
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
     background-color: #D9E7F3;
     color: #5194D1;
     padding: 12px 20px;
@@ -202,8 +202,8 @@ input[type=text], select, textarea {
     font-weight: bold;
 }
   
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
     background-color: #5194D1;
     color: #D9E7F3;
     font-weight: bold;
