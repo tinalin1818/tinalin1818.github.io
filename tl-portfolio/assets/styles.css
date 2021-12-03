@@ -10,11 +10,6 @@
     align-items: center;
     flex-wrap: wrap;
 }
-/* @media all and (max-device-width: 640px){
-    .container {
-        flex-wrap: wrap;
-    }
-} */
 
 .lead {
     font-size: 15px;
@@ -215,12 +210,6 @@ input[type=text], select, textarea {
 }
 
 /* images */
-@media screen and (max-width: 1024px) {
-    .image-grid5, .image-grid2, .image-grid2c, .image-grid1, .image-grid3 {
-      --num-cols: 2;
-      --row-height: 200px;
-    }
-}
 
 .image-grid5 {
     --gap: 16px;
@@ -300,6 +289,12 @@ input[type=text], select, textarea {
     object-fit: scale-down;
 }
 
+@media screen and (max-width: 1024px) {
+    .image-grid5, .image-grid2, .image-grid2c, .image-grid1, .image-grid3 {
+      --num-cols: 2;
+      --row-height: 200px;
+    }
+}
 /* carousel */
 .carousel-img {
     width: 100%;
