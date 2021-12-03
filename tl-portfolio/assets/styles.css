@@ -10,6 +10,11 @@
     align-items: center;
     flex-wrap: wrap;
 }
+/* @media all and (max-device-width: 640px){
+    .container {
+        flex-wrap: wrap;
+    }
+} */
 
 .lead {
     font-size: 15px;
